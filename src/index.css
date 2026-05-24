@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+#root { width: 100vw; height: 100vh; display: flex; }
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 99px; }
+
+/* Animations */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.85); }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slide-right {
+  from { opacity: 0; transform: translateX(-8px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.animate-slide-up   { animation: slide-up 0.22s ease-out both; }
+.animate-slide-right{ animation: slide-right 0.18s ease-out both; }
+.animate-fade-in    { animation: fade-in 0.25s ease-out both; }
+.animate-pulse-dot  { animation: pulse-dot 2s ease-in-out infinite; }
+.animate-spin-slow  { animation: spin 1.2s linear infinite; }
+
+/* Staggered delays */
+.delay-1 { animation-delay: 0.05s; }
+.delay-2 { animation-delay: 0.10s; }
+.delay-3 { animation-delay: 0.15s; }
+.delay-4 { animation-delay: 0.20s; }
+.delay-5 { animation-delay: 0.25s; }
+
+/* Score ring */
+.score-ring { transition: stroke-dashoffset 0.6s cubic-bezier(0.4,0,0.2,1); }
+
+/* Topology edges */
+.topo-edge { stroke: #cbd5e1; stroke-width: 1.5; fill: none; }
+.topo-edge.active { stroke: #00ADE4; stroke-width: 2; }
+
+/* Tag badges */
+.tag-h  { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
+.tag-a  { background: #e0f7ff; color: #0077A8; border: 1px solid #7dd3fc; }
+.tag-ha { background: #faf5ff; color: #7c3aed; border: 1px solid #ddd6fe; }
+
+/* Lens node colors */
+.node-healthy    { --node-bg:#dcfce7; --node-ring:#22c55e; --node-text:#15803d; }
+.node-at-risk    { --node-bg:#fefce8; --node-ring:#eab308; --node-text:#a16207; }
+.node-critical   { --node-bg:#fef2f2; --node-ring:#ef4444; --node-text:#b91c1c; }
+.node-cost-low   { --node-bg:#f0fdf4; --node-ring:#22c55e; --node-text:#15803d; }
+.node-cost-high  { --node-bg:#fff7ed; --node-ring:#f97316; --node-text:#c2410c; }
+.node-cost-spike { --node-bg:#fef2f2; --node-ring:#ef4444; --node-text:#b91c1c; }
+.node-sec-clean  { --node-bg:#f0fdf4; --node-ring:#22c55e; --node-text:#15803d; }
+.node-sec-risk   { --node-bg:#fef2f2; --node-ring:#ef4444; --node-text:#b91c1c; }
+.node-deploying  { --node-bg:#e0f7ff; --node-ring:#00ADE4; --node-text:#0077A8; }
+.node-stable     { --node-bg:#f8fafc; --node-ring:#94a3b8; --node-text:#475569; }
