@@ -14,7 +14,7 @@ body {
   overflow: hidden;
 }
 
-#root { width: 100vw; height: 100vh; display: flex; }
+#root { width: 100vw; height: 100vh; }
 
 /* Scrollbars */
 ::-webkit-scrollbar { width: 5px; height: 5px; }

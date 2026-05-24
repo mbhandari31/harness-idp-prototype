@@ -110,11 +110,11 @@ export default function Sidebar({ page, setPage }) {
       {/* User */}
       <div className="px-4 py-3 border-t border-white/8 flex items-center gap-2.5">
         <div className="w-7 h-7 rounded-full bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center text-white text-[10px] font-bold shrink-0">
-          AK
+          MB
         </div>
         <div className="min-w-0">
-          <p className="text-white text-xs font-medium truncate">Ananya Krishnan</p>
-          <p className="text-slate-500 text-[10px] truncate">Platform Engineer</p>
+          <p className="text-white text-xs font-medium truncate">Manan Bhandari</p>
+          <p className="text-slate-500 text-[10px] truncate">Senior Developer</p>
         </div>
       </div>
     </div>

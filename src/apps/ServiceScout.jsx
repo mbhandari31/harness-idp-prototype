@@ -262,7 +262,7 @@ export default function ServiceScout() {
                 {[
                   { label: 'Service name', value: serviceName, onChange: setServiceName, hint: 'Suggested by Agent-C (name conflict resolved)' },
                   { label: 'Team',         value: 'Finance Platform Team', readonly: true },
-                  { label: 'Owner',        value: 'ananya.krishnan@atlasone.io', readonly: true },
+                  { label: 'Owner',        value: 'manan.bhandari@atlasone.io', readonly: true },
                   { label: 'Language',     value: 'Python 3.12', readonly: true },
                   { label: 'Est. cost',    value: '~$340/mo', readonly: true, tag: 'A' },
                   { label: 'Lifecycle',    value: 'development', readonly: true },

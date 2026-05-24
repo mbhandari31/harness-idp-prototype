@@ -72,7 +72,7 @@ export default function Home({ setPage }) {
       {/* Greeting + ask bar */}
       <div className="max-w-2xl mx-auto mb-8 animate-slide-up">
         <p className="text-slate-400 text-sm mb-1">{greeting},</p>
-        <h1 className="text-2xl font-bold text-slate-800 mb-5">Ananya Krishnan</h1>
+        <h1 className="text-2xl font-bold text-slate-800 mb-5">Manan Bhandari</h1>
 
         {/* Ask bar */}
         <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">

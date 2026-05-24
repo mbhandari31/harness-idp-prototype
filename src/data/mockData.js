@@ -44,7 +44,7 @@ export const services = [
   },
   {
     id: 'cart-service', name: 'cart-service', type: 'service', lang: 'Node.js',
-    team: 'Frontend Systems Team', owner: 'ananya.krishnan@atlasone.io',
+    team: 'Frontend Systems Team', owner: 'manan.bhandari@atlasone.io',
     lifecycle: 'production', securityIssues: 0,
     scores: { overall: 87, security: 80, reliability: 100, compliance: 80 },
     cost: 2800, costTrend: 'stable',
@@ -63,7 +63,7 @@ export const services = [
   },
   {
     id: 'inventory-api', name: 'inventory-api', type: 'service', lang: 'Python',
-    team: 'Data and Analytics', owner: 'ananya.krishnan@atlasone.io',
+    team: 'Data and Analytics', owner: 'manan.bhandari@atlasone.io',
     lifecycle: 'production', securityIssues: 0,
     scores: { overall: 74, security: 80, reliability: 67, compliance: 80 },
     cost: 3800, costTrend: 'stable',
@@ -251,7 +251,7 @@ export const contextLayers = [
 export const sessions = [
   {
     id: 's1', title: 'inventory-api Reliability Fix', service: 'inventory-api',
-    agent: 'Agent-C', agentEmoji: '🤖', human: 'Ananya Krishnan', humanInitials: 'AK',
+    agent: 'Agent-C', agentEmoji: '🤖', human: 'Manan Bhandari', humanInitials: 'MB',
     scenario: 'agent-to-human', status: 'awaiting-human', started: '14m ago',
     why: 'Production code change requires human review — Autonomy L1 rule for prod changes.',
     timeline: [
@@ -301,7 +301,7 @@ export const activity = [
   { id: 2, actor: 'Release Herald',   type: 'agent',  action: 'Monitoring payment-service v2.4.1 — 3/6 replicas ✓',        time: '25m ago', svc: 'payment-service' },
   { id: 3, actor: 'Vikram Nair',      type: 'human',  action: 'Approved deployment plan for payment-service v2.4.1',        time: '2h ago',  svc: 'payment-service' },
   { id: 4, actor: 'Security Sentinel',type: 'agent',  action: 'Rotated 12 service credentials autonomously (L3)',           time: '45m ago', svc: null },
-  { id: 5, actor: 'Ananya Krishnan',  type: 'human',  action: 'Registered new service: recommendation-engine',             time: '1h ago',  svc: 'recommendation-engine' },
+  { id: 5, actor: 'Manan Bhandari',  type: 'human',  action: 'Registered new service: recommendation-engine',             time: '1h ago',  svc: 'recommendation-engine' },
   { id: 6, actor: 'Security Sentinel',type: 'agent',  action: 'Escalated 5 HIGH findings on banking-app to Rashmi',        time: '2h ago',  svc: 'banking-app' },
   { id: 7, actor: 'Onboarding Guide', type: 'agent',  action: 'Completed dev environment setup for priya.sharma',          time: '3h ago',  svc: null },
 ]
